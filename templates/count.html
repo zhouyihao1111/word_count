@@ -1,0 +1,9 @@
+<h1>统计结果:{{count}}</h1>
+<h2>你的文本</h2>
+{{text}}
+<h3>统计变量：</h3>
+<br>
+{% for word,count in sorted %}
+{{ word}} - {{count}}
+<br>
+{% endfor %}
